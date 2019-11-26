@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Controls(props) {
     function handleEdit() {
-        props.handleEdit()
+        props.handleEdit(true, true)
     }
 
     function handleDelete() {
@@ -10,17 +10,17 @@ export default function Controls(props) {
     }
 
     function handleNew() {
-        props.handleNew()
+        props.handleNew(true, false)
     }
 
     function handleNext() {
-        if(props.index < props.total - 1) {
+        if(props.index < props.total - 1 && !props.formFlag) {
             props.handleNext()
         }
     }
 
     function handlePrev() {
-        if(props.index > 0){
+        if(props.index > 0 && !props.formFlag){
             props.handlePrev()
         }
     }

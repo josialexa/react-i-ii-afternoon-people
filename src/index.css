@@ -126,7 +126,7 @@ align-items: center;
   width: 60%;
 }
 
-.control-button {
+.control-button, .form-button {
   background-color: rgb(65, 144, 235);
   border-radius: 13px;
   color: white;
@@ -138,6 +138,10 @@ align-items: center;
   margin: 0px 10px 0px;
   padding: 5px;
   min-width: 20%;
+}
+
+.form-buttons {
+  margin-bottom: 10px;
 }
 
 #root {

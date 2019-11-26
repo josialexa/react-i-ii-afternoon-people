@@ -1,13 +1,144 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+font-family: 'Montserrat', sans-serif;
+box-sizing: border-box;
+height: 100vh;
+width: 100vw;
+background-color: black;
+display: flex;
+justify-content: center;
+align-items: center;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+.App {
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  height: 10%;
+  background-color: rgb(65, 144, 235);
+  padding-left: 5%;
+  font-weight: bold;
+  font-size: 1em;
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+}
+
+.card {
+  width: 35%;
+  height: 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: white;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 100%;
+}
+
+.count-header {
+  padding-top: 3%;
+  display: flex;
+  align-items: baseline;
+  justify-content: flex-end;
+  margin-right: 3%;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.person {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 100%;
+}
+
+.person-name {
+  display: flex;
+  justify-content: flex-start;
+  align-content: flex-start;
+  margin-left: 5%;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 5%;
+}
+
+.person-name span {
+  border-bottom: rgb(65, 144, 235);
+  border-bottom-style: solid;
+  border-bottom-width: 3px;
+}
+
+.basic-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  height: 25%;
+  margin-left: 5%;
+  margin-bottom: 5%;
+}
+
+.movies {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  margin-left: 5%;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.indent {
+  margin-left: 5%;
+}
+
+.control-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 15%;
+  background-color: black;
+  color: white;
+  font-size: 1.5em;
+}
+
+.control-arrows {
+  cursor: pointer;
+}
+
+.control-button {
+  background-color: rgb(65, 144, 235);
+  border-radius: 10px;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: .5em;
+  text-decoration: none;
+  border: 1px solid rgb(65, 144, 235);
+  margin: 0px 10px 0px;
+  padding: 7px;
+}
+
+#root {
+  height: 100%;
+  width: 100%;
+  display: flex;
 }

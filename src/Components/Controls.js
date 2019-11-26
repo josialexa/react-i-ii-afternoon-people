@@ -14,7 +14,6 @@ export default function Controls(props) {
     }
 
     function handleNext() {
-        console.log(props.index, props.total)
         if(props.index < props.total - 1) {
             props.handleNext()
         }

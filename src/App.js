@@ -2,7 +2,6 @@ import React, {useState, useEffect} from 'react';
 import Display from './Components/Display'
 import Controls from './Components/Controls'
 import data from './data'
-import logo from './logo.svg';
 import './reset.css'
 import './App.css';
 
@@ -13,12 +12,12 @@ function App() {
   console.log(people)
 
   function handlePrev() {
-    setCurPerson(people[curPerson.id - 2])
+    setCurPerson(people[people.indexOf(curPerson) - 1])
   }
 
   function handleNext() {
     console.log('next')
-    setCurPerson(people[curPerson.id])
+    setCurPerson(people[people.indexOf(curPerson) + 1])
   }
 
   function handleEdit() {
@@ -27,13 +26,19 @@ function App() {
 
   function handleDelete() {
     console.log('Delete person:', curPerson)
+    let temp = people
+    temp.splice(curPerson.id - 1, 1)
+    temp.forEach((v, i, a) => a[i].id = i + 1)
+
+    setPeople(temp)
+    setCurPerson(people[0])
+
   }
 
   function handleNew() {
     console.log('New person')
   }
 
-  console.log(curPerson)
   return (
     <div className="App">
       <div

@@ -32,7 +32,7 @@ export default function Display(props) {
                         className='bold'>Favorite Movies:</span>
                     <ol
                         className='indent'>
-                        {props.curPerson.favoriteMovies.map((v, i) => <li key={i}>{i + 1}. {v}</li>)}
+                        {props.curPerson.favoriteMovies.map((v, i) => <li key={i}>{v}</li>)}
                     </ol>
                 </div>
             </div>
